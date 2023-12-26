@@ -7,7 +7,7 @@ const Contenedor = () => {
  const Contexto = useContext(contexto)   
 
 return(
-    <div className=" m-32 grid grid-cols-3 ">
+    <div className=" m-32 grid grid-cols-3 laptop:grid-cols-2 celular:grid-cols-1 celular:m-16 laptop:m-12 ">
           {Contexto.gifFiltrado.map(gif => (
           <img 
           key={gif.id}
